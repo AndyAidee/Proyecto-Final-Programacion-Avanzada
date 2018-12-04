@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/06/2015, 12:52:44 AM
+    Author     : hidden
+*/
+
+#divAlertas{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+}
+#alert_placeholder{
+    position: absolute;
+    left: 35%; /*La mitad menos la mitad del ancho que es 30 entonces 50%-15% = 35%%*/
+}

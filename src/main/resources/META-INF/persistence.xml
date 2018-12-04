@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="mx.lania.mca_CRMWebApp_war_1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.lania.colmena.webapp.entities.OrganizadorInvestigacionCambiosFases</class>
+    <class>com.lania.colmena.webapp.entities.UsuariosTipos</class>
+    <class>com.lania.colmena.webapp.entities.OrganizadorInvestigacionEvaluacionDetalle</class>
+    <class>com.lania.colmena.webapp.entities.Indicadores</class>
+    <class>com.lania.colmena.webapp.entities.OrganizadorInvestigacion</class>
+    <class>com.lania.colmena.webapp.entities.Usuarios</class>
+    <class>com.lania.colmena.webapp.entities.Equipos</class>
+    <class>com.lania.colmena.webapp.entities.OrganizadorInvestigacionEtiquetas</class>
+    <class>com.lania.colmena.webapp.entities.ListaAsistenciaDetalle</class>
+    <class>com.lania.colmena.webapp.entities.Fases</class>
+    <class>com.lania.colmena.webapp.entities.Preguntas</class>
+    <class>com.lania.colmena.webapp.entities.Evidencias</class>
+    <class>com.lania.colmena.webapp.entities.LineasInvestigacion</class>
+    <class>com.lania.colmena.webapp.entities.Rasgos</class>
+    <class>com.lania.colmena.webapp.entities.Estatus</class>
+    <class>com.lania.colmena.webapp.entities.Etapas</class>
+    <class>com.lania.colmena.webapp.entities.Etiquetas</class>
+    <class>com.lania.colmena.webapp.entities.MediosBusqueda</class>
+    <class>com.lania.colmena.webapp.entities.ListaAsistencia</class>
+    <class>com.lania.colmena.webapp.entities.OrganizadorInvestigacionEvaluacion</class>
+    <class>com.lania.colmena.webapp.entities.Grupos</class>
+    <class>com.lania.colmena.webapp.entities.Profesores</class>
+    <class>com.lania.colmena.webapp.entities.RespaldoArchivos</class>
+    <class>com.lania.colmena.webapp.entities.Alumno</class>
+    <class>com.lania.colmena.webapp.entities.Grupo</class>
+    <class>com.lania.colmena.webapp.entities.Equipo</class>
+    <class>com.lania.colmena.webapp.entities.RspEquipoCarpetaArchivos</class>
+    <class>com.lania.colmena.webapp.entities.Oam</class>
+    <class>com.lania.colmena.webapp.entities.OamContenido</class>
+    <class>com.lania.colmena.webapp.entities.OamContenidosDetalle</class>
+    <class>com.lania.colmena.webapp.entities.OamContenidos</class>
+    <class>com.lania.colmena.webapp.entities.OamEjemplos</class>
+    <class>com.lania.colmena.webapp.entities.OamEjerciciosRespuesta</class>
+    <class>com.lania.colmena.webapp.entities.Metadatos</class>
+    <class>com.lania.colmena.webapp.entities.OamEvaluacionesRespuesta</class>
+    <class>com.lania.colmena.webapp.entities.OamEjercicios</class>
+    <class>com.lania.colmena.webapp.entities.OamEvaluaciones</class>
+    <class>com.lania.colmena.webapp.entities.NivelEducativo</class>
+    <class>com.lania.colmena.webapp.entities.Recursos</class>
+    <class>com.lania.colmena.webapp.entities.Recurso</class>
+    <class>com.lania.colmena.webapp.entities.Usabilidad</class>
+    <class>com.lania.colmena.webapp.entities.Evaluacion</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="eclipselink.cache.shared.default" value="false"/>
+      <property name="eclipselink.cache.size.default" value="0"/>
+      <property name="eclipselink.cache.type.default" value="None"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/OAM"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="azul"/>
+    </properties>
+  </persistence-unit>
+</persistence>

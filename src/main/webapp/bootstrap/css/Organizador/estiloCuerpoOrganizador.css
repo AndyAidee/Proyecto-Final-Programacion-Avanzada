@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/06/2015, 02:42:49 PM
+    Author     : Afro
+*/
+
+#divCuerpoOrganizador{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#divCuerpoOrganizador #divContenidoOrganizadorDinamico{
+    display: inline-block;
+    width: 55%;
+    padding: 10px 45px;
+    border-right:#ccc solid thin;
+    margin-bottom: 0px; 
+}
+
+#contenidoDinamico{
+    display: inline-block;
+    width: 95%;
+    padding: 10px 45px;
+    border-right:#ccc solid thin;
+    margin-bottom: 0px; 
+}
+
+#lblTitulo{
+    display: block;
+    font-family: console;
+    font-weight: bold;
+    color: #1851CE;
+}
+#labelTitulo{
+    display: block;
+    font-family: console;
+    font-weight: bold;
+    color: #1851CE;
+}
+#divCuerpoOrganizador #divContenidoOrganizadorDinamico #txtTemaInvestigacionProfesor{
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+}
+#divCuerpoOrganizador #divContenidoOrganizadorDinamico #txtHipotesisProfesor{
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+    resize: none;
+}
+#contenidoEstatico{
+    position: absolute;
+    display: inline-block;
+    width: 25%;
+    padding: 30px 20px;
+}
+
+#divCuerpoOrganizador #divContenidoOrganizadorEstatico{
+    position: absolute;
+    display: inline-block;
+    width: 35%;
+    padding: 10px 30px;
+}
+
+#divCuerpoOrganizador #divContenidoOrganizadorEstatico #cboAreasInteresProfesor{
+    width: 95%;
+    margin: 10px auto;
+}
+
+#divCuerpoOrganizador #divContenidoOrganizadorEstatico #txtComentariosProfesor{
+    display: inline-block;
+    width: 95%;
+    margin: 10px auto;
+    resize: none;
+}
+
+#btnGuardarOrganizador{
+    clear: both;
+    float: right;
+/*    width: 30%;
+    margin: 20px 10px;*/
+}
+
+#lblInstruccion{
+    display: inline-block;
+    width: 55%;
+    font-family: console;
+    font-weight: normal;
+    padding: 5px;
+    color: #C61800;
+}
+#chkHabilitarHipotesis{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#divCuerpoOrganizador #divEdicionPreguntas{
+    width: 75%;
+    margin-left:0px;
+    margin-right:auto;
+    display:block;
+    margin-top:2px;
+    margin-bottom:0%
+
+}
+
+#divCuerpoOrganizador #divEdicionPreguntas #lblTituloPreguntas{
+    display: block;
+    font-family: console;
+    font-weight: bold;
+}
+#divCuerpoOrganizador #divEdicionPreguntas #tbPregunta{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#divCuerpoOrganizador #divEdicionPreguntas #tbRespuesta{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#divCuerpoOrganizador #divLadoDerecho{
+    display: inline-block;
+    width: 60%;
+    padding: 10px;
+}
+
+#btnAgregar{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:2px;
+    margin-bottom:0%
+}
+
+#gridPreguntas{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:2px;
+    margin-bottom:0%
+}
+
+#lblTituloListaPreguntas {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:2px;
+    margin-bottom:0%
+}
+
+#divCuerpoOrganizador #divEdicionPreguntas #divBotonesEdicion {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:2px;
+    margin-bottom:0%
+}

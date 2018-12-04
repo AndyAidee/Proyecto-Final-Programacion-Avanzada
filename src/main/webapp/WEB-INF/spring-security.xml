@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+    <!-- Bin de configuración para cargar datos de usuario-->
+    <beans:bean id="servicioDetalleUsuarios"
+            class="com.lania.colmena.webapp.spring.ServicioDetallesUsuario"/>
+
+    <!-- HTTP security configurations -->
+    <http auto-config="true" use-expressions="true">
+        <intercept-url pattern="/bootstrap/**" access="permitAll"/>
+        <intercept-url pattern="/login*" access="permitAll"/>
+      
+        <intercept-url pattern="/**" access="isAuthenticated()" />
+        <form-login 
+            login-page="/login.jsp" 
+            authentication-failure-url="/login_err.jsp?login_error=t"
+            default-target-url="/Paginas/index.jsp"
+            always-use-default-target="true"/>
+        <logout logout-url="/logout"/> 
+    </http>
+    <!--http security="none" pattern="/css/**"/-->
+    
+    <!-- Configure Authentication mechanism -->
+    <beans:bean id="encoder" class="org.springframework.security.authentication.encoding.PlaintextPasswordEncoder"/>
+    <!--beans:bean id="manejadorLogin" class="mx.lania.spring.ManejadorLogin"/-->
+    
+    <authentication-manager>
+        <authentication-provider user-service-ref="servicioDetalleUsuarios">
+            <password-encoder ref="encoder"/>
+        </authentication-provider>
+    </authentication-manager>
+
+</beans:beans>

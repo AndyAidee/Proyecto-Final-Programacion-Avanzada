@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    
+    <mapping path="*/login.jsp" exclude="true"/>
+    <mapping path="*/index-2.jsp" exclude="true"/>        
+    <mapping path="*/contenidod.jsp" exclude="true"/>        
+    <mapping path="*/ejemplos.jsp" exclude="true"/>        
+    <mapping path="*/ejercicios.jsp" exclude="true"/>        
+    <mapping path="*/evaluacion.jsp" exclude="true"/>        
+    
+    <mapping path="/OAM/*/*" exclude="true"/>                
+    <mapping path="/oams/*/*" exclude="true"/>                
+    <mapping path="*/login_err.jsp" exclude="true"/>
+    <mapping path="*/archivos.jsp" exclude="true"/>
+    <mapping path="/*" decorator="/WEB-INF/decorators/decorador.jsp"/>
+</sitemesh>

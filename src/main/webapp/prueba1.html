@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Prueba de actividad</title>
+		<script src="jquery.js"></script>
+		<script src="jsgeork/jquery.jsgeork.js"></script>
+		<link href="jsgeork/jquery.jsgeork.css" rel="stylesheet" />
+	</head>
+	<body>
+	    <div><h1> PRIMER EJERCICIO </h1></div>		
+		
+		<div id="multi_ej_1">
+			<p>
+				Año de publicaciòn de "Don Quijote de la Mancha":
+			</p>
+			<div style="display: none;" aria-hidden="true">
+				<div data-info-ok="multi_ej_1">
+					<span class="CSSMsgSuccess">A perrillo</span>
+				</div>
+				<div data-info-ko="multi_ej_1">				   
+				   <span class="CSSMsgFail">¡No mameish!</span>
+			   </div>
+			   <div data-opt="opta">La primera parte se publica en 1605 por la imprenta de Juan de la Cuesta.</div>
+			   <div data-opt="optb">En el año 1615 se publica la segunda parte.</div>
+			   <div data-opt="optc">En 1602 todavía no se había publicado.</div>
+               <div data-opt="optd">En 1627 ya se había publicado.</div>
+			</div>
+			<script>
+				var obj_multi_ej_1 = {
+					"id": "multi_ej_1",
+					"type": "multi",
+					"opt": [
+						{
+							"text": "1605",
+							"answer": "opta",
+							"select": true
+						},
+						{
+							"text": "1615",
+							"answer": "optb",
+							"select": true
+						},
+						{
+							"text": "1602",
+							"answer": "optc",
+							"select": false
+						},
+						{
+							"text": "1627",
+							"answer": "optd",
+							"select": false
+						}
+					],
+					"fieldset": true,
+					"legend": "Pregunta 2",
+					"optsuccess": true,
+					"hint": true,
+					"random": true,
+					"weighting": 50,
+					"lighting": 0,
+					"icons": "csshexent",
+					"storage": "local",
+					"storagekey": "georkgenej",
+					"showstorage": true,
+					//"fillfromstorage": true,
+					"delstorage": true
+				};
+				jsGeork.Questions.Question(obj_multi_ej_1);
+			</script>
+			
+			
+		</div>
+		
+			
+	
+	</body>
+
+</html>
