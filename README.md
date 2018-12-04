@@ -1,3 +1,3 @@
-# SiGOAM
+# CRM
 
-Proyecto para la titulación de MCA2014
+Proyecto final Programación avanzada
